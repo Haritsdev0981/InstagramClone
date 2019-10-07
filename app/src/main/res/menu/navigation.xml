@@ -15,5 +15,9 @@
         android:id="@+id/navigation_profile"
         android:icon="@drawable/ic_profile"
         android:title="@string/title_profile" />
+    <item
+        android:id="@+id/changeLanguage"
+        android:title="Change Language"
+        app:showAsAction="never"/>
 
 </menu>
