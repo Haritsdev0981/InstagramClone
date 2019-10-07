@@ -53,7 +53,16 @@ public class ProfileFragment extends Fragment {
         unbinder = ButterKnife.bind(this, view);
         return view;
     }
-
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.changeLanguage:
+                Intent intent = new Intent(Settings.ACTION_LOCALE_SETTINGS);
+                startActivity(intent);
+                break;
+        }
+        return super.onOptionsItemSelected(item);
+    }
     @Override
     public void onDestroyView() {
         super.onDestroyView();
